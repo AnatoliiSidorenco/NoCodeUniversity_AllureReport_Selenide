@@ -30,8 +30,7 @@ public class AuthorizationPage {
 
 
     public void fillInputEmailSignInForm(User user) {
-        emailInputSignInElement.shouldBe(visible);
-        emailInputSignInElement.setValue(user.getEmail());
+        emailInputSignInElement.shouldBe(visible).setValue(user.getEmail());
     }
 
     public void fillInputPasswordSignInForm(User user) {
