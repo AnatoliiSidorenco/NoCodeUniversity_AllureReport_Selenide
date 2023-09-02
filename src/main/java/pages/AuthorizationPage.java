@@ -22,7 +22,7 @@ public class AuthorizationPage {
 
     private SelenideElement emailInputSignInElement = $(byId("sw-form-capture-email-input"));
     private SelenideElement passwordInputSignInElement = $(byId("sw-form-password-input"));
-    public SelenideElement eyeIconPasswordSignInForm = $x("(//i)[1]");
+    private SelenideElement eyeIconPasswordSignInForm = $x("(//i)[1]");
     private SelenideElement forgotPasswordLinkElement = $(byCssSelector("a[href='/forgot-password']"));
     private SelenideElement signInButtonSignInFormElement = $(byId("sw-sign-in-submit-btn"));
     private SelenideElement signUpButtonSignInFormElement = $(byId("sw-go-to-sign-up-btn"));

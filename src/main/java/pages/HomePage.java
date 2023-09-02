@@ -10,8 +10,8 @@ import static com.codeborne.selenide.Selenide.$x;
 public class HomePage {
 
 
-    public SelenideElement welcomeSectionForTeacherElement = $x("//p[contains(text(),'As a teacher')]");
-    public SelenideElement welcomeSectionForStudentElement = $x("//p[contains(text(),'As a student')]");
+    private SelenideElement welcomeSectionForTeacherElement = $x("//p[contains(text(),'As a teacher')]");
+    private SelenideElement welcomeSectionForStudentElement = $x("//p[contains(text(),'As a student')]");
     private SelenideElement teacherProfileIconElement = $(byCssSelector("[class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-17qbyv7']"));
     private SelenideElement studentProfileIconElement = $(byCssSelector("[class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-17qbyv7']"));
 

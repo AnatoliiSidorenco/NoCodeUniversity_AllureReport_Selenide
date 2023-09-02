@@ -7,8 +7,8 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class RegistrationPage {
-    public SelenideElement signUpFormHeadingElement = $x("//h2");
-    public SelenideElement signUpFormElement = $x("//div[@id='signup']");
+    private SelenideElement signUpFormHeadingElement = $x("//h2");
+    private SelenideElement signUpFormElement = $x("//div[@id='signup']");
 
 
     public void signUpFormIsVisible() {

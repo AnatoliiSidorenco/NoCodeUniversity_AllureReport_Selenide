@@ -17,7 +17,7 @@ public class AuthorizationWithInvalidDataTest extends BaseTest {
     @Test
     public void signInWithInvalidEmailTest() {
         startPage.clickHeaderSignInButton();
-        authorizationPage.fillInputEmailSignInForm(nonRegisteredUser);
+        authorizationPage.fillInputEmailSignInForm(invalidUser);
         authorizationPage.fillInputPasswordSignInForm(validTeacher);
         authorizationPage.clickSignInButtonInSignInForm();
         authorizationPage.errorMessageSignInForm();
@@ -27,7 +27,7 @@ public class AuthorizationWithInvalidDataTest extends BaseTest {
     public void signInWithInvalidPasswordTest() {
         startPage.clickHeaderSignInButton();
         authorizationPage.fillInputEmailSignInForm(validTeacher);
-        authorizationPage.fillInputPasswordSignInForm(nonRegisteredUser);
+        authorizationPage.fillInputPasswordSignInForm(invalidUser);
         authorizationPage.clickSignInButtonInSignInForm();
         authorizationPage.errorMessageSignInForm();
     }
